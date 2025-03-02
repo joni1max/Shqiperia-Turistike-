@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shqipëria Turistike</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#history">History</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home">
+        <h1>Explore Shqipëria</h1>
+        <p>Discover the beauty of Albania through interactive stories.</p>
+        <button onclick="scrollToSection('destinations')">Start Exploring</button>
+    </section>
+
+    <!-- Destinations Section -->
+    <section id="destinations">
+        <h2>Must-Visit Destinations</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="assets/berat.jpg" alt="Berat">
+                <h3>Berat</h3>
+                <p>The city of a thousand windows.</p>
+            </div>
+            <div class="card">
+                <img src="assets/theth.jpg" alt="Theth">
+                <h3>Theth</h3>
+                <p>A hidden gem in the Albanian Alps.</p>
+            </div>
+            <div class="card">
+                <img src="assets/butrint.jpg" alt="Butrint">
+                <h3>Butrint</h3>
+                <p>An ancient UNESCO site full of history.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Map -->
+    <section id="history">
+        <h2>Explore Albania on the Map</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31196.231017935426!2d19.8188956!3d41.3275459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13503104b66a8f09%3A0xe727b548fda1638f!2sTirana%2C%20Albania!5e0!3m2!1sen!2s!4v1645634973629!5m2!1sen!2s" 
+            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions? Get in touch!</p>
+        <form>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+</body>
+</html>
